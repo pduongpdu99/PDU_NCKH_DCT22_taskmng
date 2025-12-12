@@ -19,6 +19,10 @@ const CONFIGURATION: IConfiguration = {
     },
     REDIS: {
 
+    },
+    RATE_LIMITING: {
+        LIMIT: 10,
+        TTL: 60 * 1000 // miliseconds
     }
 }
 

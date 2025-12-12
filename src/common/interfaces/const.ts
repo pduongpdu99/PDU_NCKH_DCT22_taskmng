@@ -21,5 +21,9 @@ export interface IConfiguration {
     },
     REDIS: {
 
+    },
+    RATE_LIMITING: {
+        LIMIT: number,
+        TTL: number // miliseconds
     }
 }
