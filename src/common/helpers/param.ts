@@ -4,7 +4,7 @@ import CONFIGURATION from '@common/const'
 
 export abstract class ParamHelper {
   constructor(private readonly config: ConfigService) {}
-  parser(query: Record<string, string>): IQuery {
+  parse(query: Record<string, string>): IQuery {
     const { limit, page, order, all, q, ...filter } = query
 
     const _limit = Number(
